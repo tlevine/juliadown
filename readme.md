@@ -9,21 +9,25 @@ This is so that we can post them on the DataKind blog.
 ## How to use
 This is what it looks like if it passes.
 
-    $ juliadown http://thomaslevine.com/!/r-spells-for-data-wizards/
-    You can send the following file to Julia for posting on the blog.
-    http://github.com/tlevine/www.thomaslevine.com/blob/master/content/!/r-spells-for-data-wizards/index.md
+    $ juliadown http://github.com/tlevine/www.thomaslevine.com/blob/master/content/!/r-spells-for-data-wizards/index.md
     $ echo $?
     0
 
 This is what it looks like if it fails.
 
-    $ juliadown http://thomaslevine.com/!/r-spells-for-data-wizards/
+    $ juliadown http://github.com/tlevine/www.thomaslevine.com/blob/master/content/!/r-spells-for-data-wizards/index.md
     This page has the following problems.
     * Foo
     * Bar
     $ echo $?
     1
 
-## HTML subset
-The following markdown subset is allowed. Juliadown
-checks the generated HTML, but 
+## Markdown subset
+Only the following markdown is allowed. All HTML is valid markdown,
+but this stuff must be written in the non-HTML markdown.
+
+* Headers (`#`, `##`, &c.)
+* Paragraphs (`\n\n`)
+* Bold (`**`)
+* Images (`![alt text](url)`)
+* Links (`[text](url)`)
