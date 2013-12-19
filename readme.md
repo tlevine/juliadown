@@ -16,9 +16,7 @@ This is what it looks like if it passes.
 This is what it looks like if it fails.
 
     $ juliadown http://github.com/tlevine/www.thomaslevine.com/blob/master/content/!/r-spells-for-data-wizards/index.md
-    This page has the following problems.
-    * Foo
-    * Bar
+    There is a "pre" tag.
     $ echo $?
     1
 

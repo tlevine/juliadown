@@ -21,7 +21,7 @@ def is_juliadown(text):
     html = lxml.html.fromstring(html_text)
     for tag in html.iterdescendants():
         if tag.tag not in VALID_TAGS:
-            return False, 'There is a "%s" tag' % tag.tag
+            return False, 'There is a "%s" tag.' % tag.tag
     return True, None
 
 def remove_yaml(fp):
