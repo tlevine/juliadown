@@ -8,8 +8,9 @@ setup(
     author_email = '_@thomaslevine.com',
     url = 'https://github.com/tlevine/juliadown',
     license = 'AGPL',
-    packages = ['juliadown'],
+    packages = ['libjuliadown'],
     description = 'Parse hackpads from data dives into pretty JSON.',
 #   long_description = open('readme.md').read(),
     install_requires = [line.strip() for line in open('requirements.txt')],
+    scripts=['juliadown'],
 )

@@ -1,6 +1,9 @@
+#!/usr/bin/env python
+import re
+import urllib2
+
 import markdown2
 import lxml.html
-import urllib2
 
 VALID_TAGS = {
     'strong',
@@ -33,7 +36,9 @@ def remove_yaml(fp):
 
 def download(raw_url):
     exclamation_url = raw_url.split('/!/')[1]
-    url = 'https://raw.github.com/tlevine/www.thomaslevine.com/master/content/!/' + exclamation_url
+    if not exclamation_url.endswith('/'):
+        exclamation_url += '/'
+    url = 'https://raw.github.com/tlevine/www.thomaslevine.com/master/content/!/%s/index.md' % exclamation_url
     fp = urllib2.urlopen(url)
     return fp
 
@@ -52,4 +57,3 @@ def main():
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
-    # main()
