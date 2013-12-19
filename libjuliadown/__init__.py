@@ -9,12 +9,16 @@ VALID_TAGS = {
     'strong',
     'h1', 'h2', 'h3', 'h4',
     'p',
+    'a',
     'img',
 }
 
 def is_juliadown(text):
     '''
     >>> is_juliadown('# Foo nbar**baz**huhu')
+    (True, None)
+
+    >>> is_juliadown('[aloeua](ho)uhu')
     (True, None)
 
     >>> is_juliadown('# italics are *not* allowed.')

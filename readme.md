@@ -9,13 +9,13 @@ This is so that we can post them on the DataKind blog.
 ## How to use
 This is what it looks like if it passes.
 
-    $ juliadown http://github.com/tlevine/www.thomaslevine.com/blob/master/content/!/r-spells-for-data-wizards/index.md
+    $ juliadown http://github.com/tlevine/www.thomaslevine.com/blob/master/content/\!/r-spells-for-data-wizards/index.md
     $ echo $?
     0
 
 This is what it looks like if it fails.
 
-    $ juliadown http://github.com/tlevine/www.thomaslevine.com/blob/master/content/!/r-spells-for-data-wizards/index.md
+    $ juliadown http://github.com/tlevine/www.thomaslevine.com/blob/master/content/\!/r-spells-for-data-wizards/index.md
     There is a "pre" tag.
     $ echo $?
     1
