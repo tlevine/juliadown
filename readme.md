@@ -28,6 +28,6 @@ but this stuff must be written in the non-HTML markdown.
 
 * Headers (`#`, `##`, &c.)
 * Paragraphs (`\n\n`)
-* Bold (`**`)
+* Strong (`**`)
 * Images (`![alt text](url)`)
 * Links (`[text](url)`)
