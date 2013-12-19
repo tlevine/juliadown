@@ -6,7 +6,12 @@ on the DataKind blog.
 
 This is so that we can post them on the DataKind blog.
 
-## How to use
+## Install
+Install like so.
+
+    sudo pip2 install juliadown
+
+## Run
 This is what it looks like if it passes.
 
     $ juliadown http://github.com/tlevine/www.thomaslevine.com/blob/master/content/\!/r-spells-for-data-wizards/index.md
